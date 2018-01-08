@@ -28,14 +28,14 @@ public class SpeedControl : MonoBehaviour {
         _currentLocation = _characterTr.position;
         _prevLocation = _characterTr.position;
         checkTime = 0.0f;
-        //Application.targetFrameRate = 60;
+        Application.targetFrameRate = 60;
     }
 
     // Update is called once per frame
     void Update () {
         UpdateVelocity();
         SetSpeed();
-        _velocity = Mathf.Lerp(_velocity, _finalVelocity, 5.0f * Time.deltaTime);
+        _velocity = Mathf.Lerp(_velocity, _finalVelocity, 4.0f * Time.deltaTime);
         _playDi.time += speed * Time.deltaTime;
         checkTime += Time.deltaTime;
     }
@@ -43,7 +43,7 @@ public class SpeedControl : MonoBehaviour {
     void SetSpeed()
     {
         speed = slider.value * 0.4f;
-        _animator.SetFloat("Speed", _velocity * 2000.0f);
+        _animator.SetFloat("Speed", _velocity * 2500.0f);
     }
 
     void UpdateVelocity()
