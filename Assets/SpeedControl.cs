@@ -16,7 +16,7 @@ public class SpeedControl : MonoBehaviour {
     private Vector3 _currentLocation;
     private Vector3 _prevLocation;
     private float _velocity;
-    int i;
+    private float checkTime;
 	// Use this for initialization
 	void Start () {
         slider = GetComponent<Slider>();
@@ -26,6 +26,7 @@ public class SpeedControl : MonoBehaviour {
         _animator.SetFloat("Speed", 0.0f);
         _currentLocation = _characterTr.position;
         _prevLocation = _characterTr.position;
+        checkTime = 0.0f;
     }
 
     // Update is called once per frame
@@ -33,30 +34,35 @@ public class SpeedControl : MonoBehaviour {
         UpdateVelocity();
         SetSpeed();
         _playDi.time += speed * Time.deltaTime;
+        checkTime += Time.deltaTime;
     }
 
     void SetSpeed()
     {
         speed = slider.value * 0.4f;
-        _animator.SetFloat("Speed", _velocity * 7500.0f);
+        _animator.SetFloat("Speed", _velocity * 2500.0f);
     }
 
     void UpdateVelocity()
     {
         _currentLocation = _characterTr.position;
-        Vector3 _transLocation = _currentLocation - _prevLocation;
-        if (speed != 0 && _currentLocation == _prevLocation)
+        if (checkTime > 1 / 60)
         {
-        }
-        else if (speed == 0 && _currentLocation == _prevLocation)
-        {
+            Vector3 _transLocation = _currentLocation - _prevLocation;
+            if (speed != 0 && _currentLocation == _prevLocation)
+            {
+            }
+            else if (speed == 0 && _currentLocation == _prevLocation)
+            {
 
+            }
+            else
+            {
+                _velocity = _transLocation.magnitude;
+            }
+            _prevLocation = _characterTr.position;
+            checkTime = 0.0f;
         }
-        else
-        {
-            _velocity = _transLocation.magnitude;
-        }
-        _prevLocation = _characterTr.position;
 
     }
 }
