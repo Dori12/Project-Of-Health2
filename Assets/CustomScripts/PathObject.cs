@@ -6,12 +6,10 @@ public class PathObject : MonoBehaviour {
 
     public Color lineColor;
 
-    private List<Transform> nodes = new List<Transform>();
-
     void OnDrawGizmos()
     {
         Gizmos.color = lineColor;
-
+        List<Transform> nodes = new List<Transform>();
         Transform[] pathTransforms = GetComponentsInChildren<Transform>();
 
         for(int i = 0; i < pathTransforms.Length; i++)
@@ -31,10 +29,10 @@ public class PathObject : MonoBehaviour {
             {
                 previousNode = nodes[i - 1].position;
             }
-            //else if (i == 0 && nodes.Count > 1)
-            //{
-            //    previousNode = nodes[nodes.Count - 1].position;
-            //}
+            else if (i == 0 && nodes.Count > 1)
+            {
+                previousNode = currentNode;
+            }
 
             Gizmos.DrawLine(previousNode, currentNode);
         }
