@@ -8,7 +8,7 @@ using UnityEngine.Playables;
 public class SpeedControl : MonoBehaviour {
 
     private float speed;
-    private Slider slider;
+    public Slider slider;
     public Animator _animator;
     public PlayableDirector _playDi;
     public Transform _characterTr;
