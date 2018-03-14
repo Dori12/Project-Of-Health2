@@ -31,7 +31,7 @@ public class DisableTracking : MonoBehaviour
 
         //OVRTouchpad.Create();
         //OVRTouchpad.TouchHandler += HandleTouchHandler;
-        XRDevice.DisableAutoXRCameraTracking(Camera.main, false);
+        XRDevice.DisableAutoXRCameraTracking(Camera.main, true);
 
     }
 
