@@ -1,0 +1,212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Asphalt_01
+  m_Shader: {fileID: 4800000, guid: f3dd98751ef2da64bb3fb08d347aec73, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _EMISSION _METALLICGLOSSMAP _NORMALMAP _VERTEXCOLOR
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Mrao:
+        m_Texture: {fileID: 2800000, guid: 31ce593731c099c4aad55d0d90fc61c7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AO_1:
+        m_Texture: {fileID: 2800000, guid: 8124f6fe76549d34ba257bb0b177aae1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Albedo_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: ae54827b0782a9849a13764d6f9dad70, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Detail:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedo:
+        m_Texture: {fileID: 2800000, guid: 4cfd37cf85631cc4eb13f97cda4d695d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormal:
+        m_Texture: {fileID: 2800000, guid: ae54827b0782a9849a13764d6f9dad70, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Detail_d_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Detail_n_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Diffuse:
+        m_Texture: {fileID: 2800000, guid: 824c301df077e9d4880c7839dbc606b5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 1}
+    - _Emission_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HeightMap_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MRAO:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 7f38e3b60180fb8449e1fda406fb674c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 1}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: 69cc472cf2b06b049ae908237e11e8db, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Metallic_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Refraction:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Terrain:
+        m_Texture: {fileID: 2800000, guid: 9d90663c9ea0d484eae41530ee2031c5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Transmission_1:
+        m_Texture: {fileID: 2800000, guid: de92c12c8de761c4c99b55fea6d7e001, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _terrain_normal:
+        m_Texture: {fileID: 2800000, guid: 1868fa7be7ed59c45927c480c110c8d8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - Transparency: 1
+    - VertexColorMultiplier: 1
+    - _AO: 1
+    - _AO_S_1: 1
+    - _AO_specular_1: 0.82
+    - _BrightnessDetail: 10
+    - _BumpScale: 1
+    - _Cutoff: 1
+    - _Depth_1: 0
+    - _DetailNormalMapScale: 1
+    - _DiffuseAmbientLight_1: 62.82062
+    - _DstBlend: 0
+    - _EmissionScaleUI: 0
+    - _Emission_s_1: 0.17
+    - _Emission_togge_1: 0
+    - _Gloss: 0
+    - _GlossMapScale: 1
+    - _Gloss_s_1: 0
+    - _Glossiness: 0.142
+    - _GlossyReflections: 1
+    - _IntensityVC: 1
+    - _Metallic: 0.972
+    - _Metallic_s_1: 0
+    - _Mode: 1
+    - _Multiply_emission_1: 40
+    - _Multiply_transmission_1: 5
+    - _Normal_s_1: 1
+    - _OcclusionStrength: 1
+    - _Opacity: 1
+    - _Opacity_clip_1: 0
+    - _Parallax: 0.005
+    - _Quality_1: 60
+    - _ReflToRefr: 0.55
+    - _RefractionIntensity: 0
+    - _Roughness: 1.36
+    - _Shininess: 1
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _TerrainTile: 3
+    - _Tile_x: 1
+    - _Tile_y: 1
+    - _Tiledetailx: 1
+    - _Tiledetaily: 1
+    - _Tilingx_1: 1
+    - _Tilingy_1: 1
+    - _Transmission_gauss_1: 6.77
+    - _Transmission_s_1: 100
+    - _Transmission_toggle_1: 0
+    - _UVSec: 0
+    - _VertexAlpha: 0
+    - _ZWrite: 1
+    - _detail_d_s_1: 0
+    - _detail_n_s_1: 1
+    - _detail_tail_u_1: 1
+    - _detail_tail_v_1: 1
+    - _normal_ao: 1
+    - _specular_Ambient_Light_1: 93
+    - _steps_1: 60
+    - _subsurfacescattering_1: 0.87
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color_1: {r: 0.45588237, g: 0.26146194, b: 0.26146194, a: 1}
+    - _Color_Transmission_1: {r: 1, g: 1, b: 1, a: 0}
+    - _Color_ambient_1: {r: 0.4852941, g: 0.14987023, b: 0.14987023, a: 1}
+    - _Color_emission_1: {r: 1, g: 1, b: 1, a: 1}
+    - _Diffuse: {r: 0.9117647, g: 0.8760425, b: 0.8179066, a: 1}
+    - _Diffuse_amb_color_1: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _Emission: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
+    - _LightWrapping: {r: 0.9058824, g: 0.49411756, b: 0.49019605, a: 1}
+    - _RoadColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _Specular_amb_color_1: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+--- !u!1002 &2100001
+EditorExtensionImpl:
+  serializedVersion: 6
