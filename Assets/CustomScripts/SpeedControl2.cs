@@ -37,7 +37,7 @@ public class SpeedControl2 : MonoBehaviour {
     {
         UpdateVelocity();
         SetSpeed();
-        _velocity = Mathf.Lerp(_velocity, _finalVelocity, 4.0f * Time.deltaTime);
+        _velocity = Mathf.Lerp(_velocity, speed/42.0f, 4.0f * Time.deltaTime);
         _scCharacterControl.Speed = Mathf.Lerp(_scCharacterControl.Speed, speed, 3.0f*Time.deltaTime);
         _scCharacterControl.Speed = Mathf.Clamp(_scCharacterControl.Speed, 0.0f, 10.0f);
         checkTime += Time.deltaTime;
@@ -46,7 +46,7 @@ public class SpeedControl2 : MonoBehaviour {
     void SetSpeed()
     {
         speed = slider.value * 10.0f;
-        _animator.SetFloat("Speed", _velocity * 2500.0f);
+        _animator.SetFloat("Speed", _velocity * 2500.0f);//_velocity * 2500.0f);
     }
 
     void UpdateVelocity()

@@ -32,7 +32,7 @@ public class DisableTracking : MonoBehaviour
         //OVRTouchpad.Create();
         //OVRTouchpad.TouchHandler += HandleTouchHandler;
         XRDevice.DisableAutoXRCameraTracking(Camera.main, true);
-
+        gameObject.transform.position = new Vector3(63.45f, 2.0f, 140.63f);
     }
 
     // Update is called once per frame
